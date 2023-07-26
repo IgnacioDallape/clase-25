@@ -78,6 +78,8 @@ app.get('/home', (req,res) => {
     res.send('Home')
 })
 
+//con esto podemos probar cuando no esta forkeado y cuando si
+
 let visitas = 0
 
 app.get('/visitas', (req,res) => {
