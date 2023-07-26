@@ -77,3 +77,10 @@ app.get('/suma', (req,res) => {
 app.get('/home', (req,res) => {
     res.send('Home')
 })
+
+let visitas = 0
+
+app.get('/visitas', (req,res) => {
+    visitas++
+    res.send('has visitado ' + visitas + ' veces el sitio')
+})
